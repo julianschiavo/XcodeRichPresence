@@ -1,0 +1,6 @@
+framework module SwordRPC {
+  umbrella header "SwordRPC-umbrella.h"
+
+  export *
+  module * { export * }
+}

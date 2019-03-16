@@ -1,0 +1,6 @@
+framework module Pods_XcodeRichPresence {
+  umbrella header "Pods-XcodeRichPresence-umbrella.h"
+
+  export *
+  module * { export * }
+}

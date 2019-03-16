@@ -1,0 +1,20 @@
+PODS:
+  - BlueSocket (0.12.94)
+  - SwordRPC (0.2.2):
+    - BlueSocket (~> 0.12)
+
+DEPENDENCIES:
+  - SwordRPC
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BlueSocket
+    - SwordRPC
+
+SPEC CHECKSUMS:
+  BlueSocket: 184ff448002475bfb5d676286c2458da5d971f47
+  SwordRPC: 7ed51064ea9e61c3c6833cf9de90a8be0ab36653
+
+PODFILE CHECKSUM: 30c1a72f5a62c7ca2360a3ea20f60c858365eddc
+
+COCOAPODS: 1.6.0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8180DE01B63F32034834142B /* Pods_XcodeRichPresence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3263F5FBF6C83967B7F6DC /* Pods_XcodeRichPresence.framework */; };
 		B99B8D96223BDA6400C486EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B8D95223BDA6400C486EF /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55B5CD015F3AA6482F165AC1 /* Pods-XcodeRichPresence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeRichPresence.release.xcconfig"; path = "Target Support Files/Pods-XcodeRichPresence/Pods-XcodeRichPresence.release.xcconfig"; sourceTree = "<group>"; };
+		5A3263F5FBF6C83967B7F6DC /* Pods_XcodeRichPresence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodeRichPresence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99B8D92223BDA6400C486EF /* XcodeRichPresence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XcodeRichPresence; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99B8D95223BDA6400C486EF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E68B5838FF65C3F41C3EAB25 /* Pods-XcodeRichPresence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeRichPresence.debug.xcconfig"; path = "Target Support Files/Pods-XcodeRichPresence/Pods-XcodeRichPresence.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8180DE01B63F32034834142B /* Pods_XcodeRichPresence.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F5CDA154274728D4BCB3A31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A3263F5FBF6C83967B7F6DC /* Pods_XcodeRichPresence.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F40AADA7B3EB4B3468635CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E68B5838FF65C3F41C3EAB25 /* Pods-XcodeRichPresence.debug.xcconfig */,
+				55B5CD015F3AA6482F165AC1 /* Pods-XcodeRichPresence.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B99B8D89223BDA6400C486EF = {
 			isa = PBXGroup;
 			children = (
 				B99B8D94223BDA6400C486EF /* XcodeRichPresence */,
 				B99B8D93223BDA6400C486EF /* Products */,
+				6F40AADA7B3EB4B3468635CC /* Pods */,
+				0F5CDA154274728D4BCB3A31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B99B8D99223BDA6400C486EF /* Build configuration list for PBXNativeTarget "XcodeRichPresence" */;
 			buildPhases = (
+				2F238C7C8B22C520464A0A1A /* [CP] Check Pods Manifest.lock */,
 				B99B8D8E223BDA6400C486EF /* Sources */,
 				B99B8D8F223BDA6400C486EF /* Frameworks */,
 				B99B8D90223BDA6400C486EF /* CopyFiles */,
@@ -113,6 +139,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F238C7C8B22C520464A0A1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XcodeRichPresence-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B99B8D8E223BDA6400C486EF /* Sources */ = {
@@ -243,6 +294,7 @@
 		};
 		B99B8D9A223BDA6400C486EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68B5838FF65C3F41C3EAB25 /* Pods-XcodeRichPresence.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74N8K5J2N7;
@@ -253,6 +305,7 @@
 		};
 		B99B8D9B223BDA6400C486EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55B5CD015F3AA6482F165AC1 /* Pods-XcodeRichPresence.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74N8K5J2N7;
